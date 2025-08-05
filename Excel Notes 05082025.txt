@@ -1,0 +1,44 @@
+Excel Notes 05/08/2025
+
+Section 1 | Understanding Basics
+1. Understanding Excel Layout
+
+2. Workbook vs Worksheet
+File of excel is workbook and a single sheet is worksheet. So we can store n number of worksheets.
+
+3. Ribbons, Tabs, Groups, and Menus
+
+- The main menu’s are called tabs where file, home, insert n all are written.
+- And after clicking for eg Home we get to see different things that are nothing but ribbons. 
+- And also the different options separated by a straight line is known as groups. 
+
+4. Customizing the Quick Access Toolbar
+
+
+5. Cells | Rows | Columns
+
+A1 is a cell
+Row mtlb number wala
+Column ko Alphabet wala
+Naming and Selecting, Formatting,
+Auto-Adjusting
+Creating & Deleting 
+6. Saving, Undo/Redo
+7. Intelligent Navigation
+8. Selecting Ranges
+9. Copying & Pasting Mastery
+Ctrl + Alt + V special pasting options
+10. Basic Arithmetic Operations
++,-,*,/
+Yeh aata hai
+In built functions
+11.Cell Referencing
+Koi particular output ko nikalna but kisi dusre dependent variable/value ke help se nikana is what Cell referencing is.
+
+Types: 
+Relative
+Absolute
+Idhr yeh hota hai ki kuch formula dala [E2*(B8/100)] phir drag down kiya toh voh aisa lega normally [E3*(B9/100)] toh yeh nhi chahiye hame chahiye B8 lock in hi rhe aur E wala change hota rhe isliye use krneka formula mai [E2*($B$8/100)].  $ iske chlte kabhi B8 change nhi hoga 
+Mixed
+12. Different Techniques of Fills
+Kn 1 likho aur drag kro toh 2,3,4,5 aisaa generate ho jaayega.

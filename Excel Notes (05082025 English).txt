@@ -1,0 +1,45 @@
+# Excel Basics Notes (05/08/2025)
+
+## Section 1: Understanding the Basics
+
+### 1. Excel Layout
+- The file itself is called a **Workbook**
+- Each tab inside is called a **Worksheet**
+- You can store multiple worksheets inside one workbook.
+
+### 2. Tabs, Ribbons, and Groups
+- The main menu items like File, Home, Insert, etc., are called **Tabs**.
+- When you click a Tab (e.g., Home), the set of options shown are **Ribbons**.
+- Within ribbons, related items grouped together (separated by vertical lines) are called **Groups**.
+
+### 3. Quick Access Toolbar
+- Can be customized to add frequently used commands.
+
+### 4. Cells, Rows, and Columns
+- A cell is like A1, B2, etc.
+- **Rows** are numbered (1, 2, 3...)
+- **Columns** are labeled with letters (A, B, C...)
+- You can name, select, format, auto-adjust, create, or delete them.
+
+### 5. Save, Undo, Redo
+- Basic functions to manage your work progress.
+
+### 6. Navigation and Selection
+- Learn to move quickly through the sheet and select ranges smartly.
+
+### 7. Copy and Paste Mastery
+- Use `Ctrl + Alt + V` for special paste options.
+
+### 8. Basic Arithmetic in Excel
+- Basic formulas: `+`, `-`, `*`, `/`
+
+### 9. Cell Referencing
+- Use formulas that depend on values from other cells.
+
+#### Types of Cell References:
+- **Relative**: Changes as you drag (e.g., `E2*(B8/100)` becomes `E3*(B9/100)`)
+- **Absolute**: Use `$` to lock values (e.g., `E2*($B$8/100)`)
+- **Mixed**: Lock either row or column only.
+
+### 10. Fill Techniques
+- Write `1`, drag down to auto-fill `2, 3, 4…`
