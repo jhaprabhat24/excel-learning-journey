@@ -1,0 +1,74 @@
+Section 2 Excel Notes 06/08/2025-08/08/2025
+
+Section 2 | Excel-Based Wrangling
+1. Trim, Duplicate, Find & Replace
+
+Trim ka formula =TRIM(Cellname) done why trip like if the names are written with some unusual spacing so this trim method helps with trimming all the waste spaces n all.
+
+For Hiding: Just select the cell and hide it and vice versa
+
+Find & Replace : In home tab in the editing group we get Find and select or we can just use Ctrl+F to find some value or to replace some value. 
+
+
+2. Case Transformations: Upper, Lower, Proper
+
+Upper : ABC (All capital)
+Lower : abc (All small)
+Proper : Abc Def (Like only first letter is caps)
+
+3. Data Extraction Techniques: Left, Right, Mid, LEN
+
+Left : =LEFT(Cell name, kitna value chahiye)
+Right : =RIGHT(Cell name, kitne value chahiye
+Mid : =MID(Cell name, kaha se start eg 2, kitne number of value lene hai jaise 3 mtlb 2nd index se chlu krna hai aur 3 words lene hai bass
+
+4. Combining Data with "&"/CONCAT, 
+TEXTJOIN
+
+With & : Cell name 1& " "&Cell name 2 
+" " for spacing in between the two words.
+
+CONCAT : =CONCAT(Cell 1, " ",Cell 2)
+
+TEXTJOIN : =TEXTJOIN(Delimiter nothing " ", ignore empty?(have to write true or false), Cell 1, Cell 2)
+
+5. Splitting Columns: Delimiters & Fixed Width
+
+In data column use text to columns then using fixed width we can split the data in two parts like if john@gmail.com and shawn@gmail.com if i kept the line in between h and n so the data will be splitting in two parts first part with have joh and sha and other part n@gmail.com and wn@gmail.com 
+
+6. Flash Fill
+Nothing but useful 
+Like there a multiple names of different widths so if only in one cell i wrote 
+Prabhat Jha and now from home tab in the editing group use the flash fill option from fill and it will automatically understand that in A column it wants first name an in B column it wants last name
+
+7. Merging, Consolidating, and Appending Data
+
+Consolidating data: Koi ek table mai multiple departments haii aur unke different entries hai like sales ka ek entry hai 45000 aur 4-5 rows baad hai sales ka hi 55000 toh consolidating se voh Ek summary provide krega ki sales mai itna paisa aur baaki sab mai bhi same toh ismai different functions hota hai sum, avg, max, min etc. 
+
+8. Date and Time
+TODAY, YESTERDAY, TOMORROW
+NOW, YEAR, MONTH, DAY
+DATEDIF, NETWORKDAYS, WORKDAY 
+Gantt Chart-style project tracking
+
+Today : =TODAY() (aajkal date bata dega)
+Only for today there is a built in function for yesterday n tomorrow trick
+Yesterday : =TODAY() - 1
+Tomorrow: =TODAY() + 1
+
+DATEDIF : Date difference syntax: =DATEDIF(cell jismai date likha hai),TODAY()[mtlb ki aaj tak kitna time hua],"y/m/d"[ismai se koi bhi ek likha hai year mai chhiye ya months ya days mai]
+
+
+Networkdays: iska mtlb ki kitne working days the do working days le bich mai
+=NETWORKDAYS(start time, end time, [holidays])
+
+Workday : =WORKDAY(start date ,end date, (holiday))
+
+Ganttt chart 
+9. Logical Functions: IF, IFS, SWITCH, AND, OR
+
+Same If conditions and all
+
+10. Arithmetic Functions: SUM, AVERAGE, PRODUCT
+
+Normal functions
