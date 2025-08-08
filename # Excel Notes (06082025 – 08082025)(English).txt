@@ -1,0 +1,117 @@
+# Excel Notes (06/08/2025 – 08/08/2025)
+
+## 📂 Section 2: Excel-Based Wrangling
+
+### 1. TRIM, Duplicate, Find & Replace
+
+- `TRIM()` removes extra spaces from text.  
+  Example: `=TRIM(A1)`  
+  Useful when names or entries have unwanted spacing.
+
+- **Hide/Unhide Columns or Rows**:  
+  Right-click → Hide or Unhide.
+
+- **Find & Replace**:  
+  Located in the **Home** tab → **Editing group** → **Find & Select**  
+  Or use keyboard shortcut `Ctrl + F` / `Ctrl + H`.
+
+---
+
+### 2. Case Transformation Functions
+
+- `UPPER()` → Converts text to all caps.  
+- `LOWER()` → Converts text to lowercase.  
+- `PROPER()` → Capitalizes the first letter of each word.
+
+Example:
+```excel
+=UPPER(A1)
+=LOWER(A1)
+=PROPER(A1)
+3. Data Extraction Functions
+LEFT(text, number_of_characters)
+
+RIGHT(text, number_of_characters)
+
+MID(text, start_position, number_of_characters)
+
+LEN(text) → Returns the length of the string.
+
+Example:
+
+excel
+Copy
+Edit
+=LEFT(A1, 3)
+=RIGHT(A1, 4)
+=MID(A1, 2, 3)
+4. Combining Data: &, CONCAT, TEXTJOIN
+& Operator:
+=A1 & " " & B1 → Joins A1 and B1 with a space in between.
+
+CONCAT() Function:
+=CONCAT(A1, " ", B1) → Similar to &, more readable.
+
+TEXTJOIN() Function:
+Syntax: =TEXTJOIN(" ", TRUE, A1, B1)
+Joins values with a delimiter, ignoring empty cells if TRUE.
+
+5. Splitting Columns: Delimiters & Fixed Width
+Go to Data tab → Text to Columns
+
+Delimited: Uses characters (comma, space) to split text.
+
+Fixed Width: Splits based on fixed position, useful when formatting is aligned but not separated by delimiters.
+
+6. Flash Fill
+Use Flash Fill from the Home tab → Editing group → Fill → Flash Fill
+
+Automatically detects patterns (e.g., splitting first and last names).
+
+7. Merging, Consolidating & Appending Data
+Consolidation allows combining data from multiple rows/columns into summaries.
+
+Example: If "Sales" is mentioned in multiple rows, consolidation with SUM will add all sales values.
+
+Found under: Data tab → Consolidate
+
+8. Date & Time Functions
+=TODAY() → Returns current date.
+
+=TODAY()-1 → Yesterday's date.
+
+=TODAY()+1 → Tomorrow's date.
+
+=NOW() → Returns current date and time.
+
+Date Components:
+=YEAR(A1), =MONTH(A1), =DAY(A1)
+
+DATEDIF Function:
+=DATEDIF(start_date, end_date, "y/m/d")
+Calculates difference in years, months, or days.
+
+NETWORKDAYS Function:
+=NETWORKDAYS(start_date, end_date, [holidays])
+Returns number of working days between two dates.
+
+WORKDAY Function:
+=WORKDAY(start_date, days, [holidays])
+
+9. Logical Functions
+IF(condition, value_if_true, value_if_false)
+
+IFS(condition1, result1, condition2, result2, ...)
+
+SWITCH(expression, value1, result1, value2, result2, ...)
+
+AND(condition1, condition2, ...)
+
+OR(condition1, condition2, ...)
+
+10. Arithmetic Functions
+SUM(range) → Adds values
+
+AVERAGE(range) → Calculates mean
+
+PRODUCT(range) → Multiplies values
