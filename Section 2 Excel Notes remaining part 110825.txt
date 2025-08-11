@@ -1,0 +1,35 @@
+11. Lookup Functions
+VLOOKUP, HLOOKUP (legacy)
+INDEX + MATCH (industry-preferred)
+XLOOKUP (modern & powerful)
+LOOKUP
+
+VLOOKUP : 
+=VLOOKUP("value jiska search krna hai","pura table select jismai search krna hai",konse column ka value chahiye “,"range lookup”
+
+HLOOKUP : Similar to VLOOKUP only for horizontal rows
+
+Index + Match : 
+Syntax : =INDEX(kis range se , MATCH(“naam kiska chahiye”, (“jis range se naam milega”))
+
+LOOKUP : Syntax:
+=LOOKUP(“kiske close ek number uske close wala value”,”phle value konse range ka hai”,”konse range se ans print krna hai”)
+
+Sort the table and then use LOOKUP
+
+Best to use INDEX + MATCH
+
+12. Error Handling: IFERROR
+
+If the formula enter is wrong instead of just leaving it after writing the formula we insert the formula inside IFERROR and after ending of the formula we write “Formula Wrong”
+
+13. Sorting, Filtering & Grouping
+Data Sorting
+Filter, Advanced Filter (with criteria range)
+Group/Ungroup rows/columns
+Subtotals with Outline
+
+All the functions available in Data tab 
+For grouping just select the rows/columns jo bhi chahiye and then select group and to ungroup it select the grouped rows/columns and then select ungroup. 
+
+Advance filtering is used when we want specific values with some conditions like salary >60000 so it will give values >60000. 

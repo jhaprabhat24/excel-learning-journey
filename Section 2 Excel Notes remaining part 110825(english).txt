@@ -1,0 +1,65 @@
+11. Lookup Functions
+
+- **VLOOKUP** (Vertical Lookup)  
+  Syntax:  
+  ```excel
+  =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+Searches for a value in the first column of a table and returns a value from a specified column.
+
+HLOOKUP (Horizontal Lookup)
+Similar to VLOOKUP but searches across rows instead of columns.
+
+INDEX + MATCH (Industry Preferred)
+Syntax:
+
+excel
+Copy
+Edit
+=INDEX(return_range, MATCH(lookup_value, lookup_range, match_type))
+INDEX returns a value from a given range at a specific position.
+
+MATCH finds the position of a value in a range.
+This method is more flexible and reliable than VLOOKUP.
+
+LOOKUP (Legacy)
+Syntax:
+
+excel
+Copy
+Edit
+=LOOKUP(lookup_value, lookup_vector, result_vector)
+Finds the closest match in a sorted range.
+!! The table must be sorted before using LOOKUP.
+
+12. Error Handling: IFERROR
+Wraps a formula to replace error messages with a custom message or alternative result.
+
+Syntax:
+
+excel
+Copy
+Edit
+=IFERROR(original_formula, "Custom Message")
+Example:
+
+excel
+Copy
+Edit
+=IFERROR(VLOOKUP(A1, B1:C10, 2, FALSE), "Value Not Found")
+13. Sorting, Filtering & Grouping
+Sorting: Arrange data in ascending or descending order.
+Found in the Data tab.
+
+Filter: Display only rows that meet specific criteria.
+Shortcut: Ctrl + Shift + L
+
+Advanced Filter: Allows filtering based on a criteria range.
+Example: Display only records where salary > 60,000.
+
+Grouping/Ungrouping Rows or Columns:
+
+Select the rows/columns to group → Data tab → Group
+
+To ungroup, select grouped rows/columns → Ungroup.
+
+Subtotals with Outline: Summarizes grouped data automatically.
